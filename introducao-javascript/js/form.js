@@ -53,11 +53,16 @@ function montaTr(paciente) {
   var pacienteTr = document.createElement("tr");
   pacienteTr.classList.add("paciente");
 
+  var iconRemove = document.createElement("span");
+
   pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"));
   pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"));
   pacienteTr.appendChild(montaTd(paciente.altura, "info-altura"));
   pacienteTr.appendChild(montaTd(paciente.gordura, "info-gordura"));
   pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"));
+  pacienteTr.appendChild(montaTd("Excluir", "remover-paciente"));
+  
+  
 
   return pacienteTr;
 }
