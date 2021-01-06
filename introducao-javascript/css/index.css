@@ -146,3 +146,13 @@ button[disabled=disabled], button:disabled {
     opacity: 0;
     transition: 0.5s;
 }
+
+.remove-paciente{
+	border: none;
+	color: red;
+}
+
+.remove-paciente:hover{
+	cursor: pointer;
+	font-weight: bold;
+}
