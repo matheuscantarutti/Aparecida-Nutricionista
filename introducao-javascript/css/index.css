@@ -5,12 +5,17 @@
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	background-image: url("https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bnV0cml0aW9uJTIwYmFja2dyb3VuZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+
 }
 
 header{
-	background-color: #333;
+	background-color: #FFF;
 	height: 3em;
-	color: #FFF;
+	color: #ffe000;
 	margin-bottom: 1em;
 }
 
@@ -68,6 +73,14 @@ td, th {
 th{
 	font-weight: bold;
 	background-color: #EEE;
+}
+
+.addPacientes{
+	transition:all 0.4s linear;
+}
+
+input:checked ~ .addPacientes{
+	height:220px;
 }
 
 label{
@@ -169,4 +182,9 @@ button[disabled=disabled], button:disabled {
 
 .invisivel {
     display: none;
+}
+
+#importar-paciente{
+	float: right;
+	width: auto;
 }
