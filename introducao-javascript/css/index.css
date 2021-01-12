@@ -156,3 +156,17 @@ button[disabled=disabled], button:disabled {
 	cursor: pointer;
 	font-weight: bold;
 }
+
+#filtrar-tabela{
+	width: 15em;
+	height: 3em;
+	margin-bottom: 1em;
+}
+
+#busca-label{
+	font-weight: bold;
+}
+
+.invisivel {
+    display: none;
+}
