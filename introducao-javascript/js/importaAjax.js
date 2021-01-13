@@ -6,11 +6,18 @@ btnImport.addEventListener("click", function(){
     xhr.open("GET", "http://api-pacientes.herokuapp.com/pacientes");
 
     xhr.addEventListener("load", function(){
-        var importPacientes = JSON.parse(xhr.responseText);
+
+        if(xhr.status == 200){
+            var importPacientes = JSON.parse(xhr.responseText);
        
-        importPacientes.forEach(paciente => {
-            addPacienteNaTabela(paciente);
-        });
+            importPacientes.forEach(paciente => {
+                addPacienteNaTabela(paciente);
+            });
+        }else{
+            erroAjax.classList.remove("invisivel");
+            
+        }
+        
         
     });
 
